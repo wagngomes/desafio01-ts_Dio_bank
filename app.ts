@@ -10,3 +10,8 @@ peopleAccount.getBalance()
 peopleAccount.withdraw(50)
 peopleAccount.getBalance()
 
+const companyAccount: CompanyAccount = new CompanyAccount('Viveo', 1000)
+console.log(companyAccount)
+companyAccount.getLoan(6000)
+companyAccount.getBalance()
+
