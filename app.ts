@@ -1,17 +1,9 @@
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
+import { StartUpAccount } from './class/StartUpAccount'
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
-console.log(peopleAccount)
-peopleAccount.deposit(66)
-peopleAccount.getBalance()
-peopleAccount.deposit(144)
-peopleAccount.getBalance()
-peopleAccount.withdraw(50)
-peopleAccount.getBalance()
+const statUp: StartUpAccount = new StartUpAccount('Nath', 15)
+statUp.getBalance()
+statUp.depositPlus(115)
 
-const companyAccount: CompanyAccount = new CompanyAccount('Viveo', 1000)
-console.log(companyAccount)
-companyAccount.getLoan(6000)
-companyAccount.getBalance()
-
+statUp.getBalance()
